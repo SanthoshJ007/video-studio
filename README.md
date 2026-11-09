@@ -12,8 +12,8 @@ First render downloads a headless Chrome automatically (needs internet).
 
 ## Files
 - `src/Scene3D.tsx`   - the 3D animation (robot arm). Animate ONLY with `useCurrentFrame()`, never `useFrame()`.
-- `src/captions.ts`   - word-level captions (startMs / endMs). Edit text and timing here.
-- `src/Captions.tsx`  - TikTok-style caption renderer with active-word highlight.
+- `src/captionData.ts` - word-level captions (startMs / endMs). Edit text and timing here.
+- `src/CaptionOverlay.tsx`- TikTok-style caption renderer with active-word highlight.
 - `src/MainVideo.tsx` - combines scene + captions + audio.
 - `src/Root.tsx`      - resolution, fps, duration (1920x1080, 30fps, 8s).
 - `public/audio.wav`  - placeholder tone. Replace with your music/voiceover and keep the name, or change it in MainVideo.tsx.
